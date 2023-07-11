@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<body id="pag-login">
+    <div class="" id="div-login">
+      <form action="" method="post" id="login" style="padding: 10rem;">
+          {% csrf_token %}
+          {% load crispy_forms_tags %}
+          <div class="card mx-auto" style="width: 25rem; color: black;">
+              <div class="card-body" id="carta">
+                {{ form | crispy }}
+                <div class="d-grid gap-2">
+                  <button class="btn btn-sm btn-primary float-end" id="btn-login" type="submit">Iniciar Sesion</button>
+              </div>
+              </div>
+            </div>
+            
+      </form>
+    </div>
+</body>
+
+{% endblock %}
