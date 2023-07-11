@@ -15,3 +15,6 @@ def mision(request):
 
 def noticias(request):
     return render(request, 'app/noticias.html')
+
+def tienda(request):
+    return render(request, 'app/tienda.html')
