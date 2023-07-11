@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <div id="map"></div>
+
+{% endblock %}
+
+{% block js %}
+
+    <script src="{% static 'app/js/app.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+{% endblock %}

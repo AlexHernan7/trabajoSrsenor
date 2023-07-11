@@ -1,0 +1,273 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Courier;
+}
+
+/*HEADER INICIO*/
+.header {
+	overflow:hidden; 
+	background:black;
+	margin-bottom:20px;
+}
+
+.navbar-brand img{
+    height: 75px;
+    width: auto;
+}
+
+.header .nav-item:hover {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding-right: 50px;
+	padding:10px 10px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+.header .nav-item:hover {
+	background: #ff0000;
+	border-radius:50px;
+	transform: scale(1.05);
+}
+/*HEADER FIN*/
+
+/*INICIO INDEX*/
+/*CARRUSEL INDEX INICIO*/
+.carousel-inner img{
+	margin: auto;
+	display: flex;
+	max-width: 100%;
+	max-height: 700px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+/*CARRUSEL INDEX FIN*/
+
+/*NOTICIAS INDEX INICIO*/
+.top-news .new {
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+	margin-right: 10px;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.top-news .new:hover {
+    box-shadow: 0 0.1rem 0.3rem #0e0e0f;
+}
+
+.top-news .new .title {
+    text-align: center;
+    margin: 1rem;
+}
+
+.top-news .new p {
+    margin: 1rem;
+}
+
+.new img {
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*NOTICIAS INDEX FIN*/
+/*FIN INDEX*/
+
+/*INICIO NOTICIAS*/
+/*NOTICIAS NOTICIAS INICIO*/
+.noticias {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0
+}
+
+.noticias .noticia:hover {
+    box-shadow: 0 0.1rem 0.3rem #0e0e0f;
+}
+
+.noticias .noticia h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.noticias .noticia p {
+    margin: 1rem;
+}
+
+.noticia img {
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*NOTICIAS NOTICIAS FIN*/
+
+/*RESPONSIVE NOTICIAS INICIO*/
+@media screen and (max-width: 800px) {
+	.noticias {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.noticias {
+		grid-template-columns: 1fr;
+	}
+}
+/*RESPONSIVE NOTICIAS FIN*/
+/*FIN NOTICIAS*/
+
+/*INICIO MISION*/
+.verdad img {
+	max-width: 100%;
+	max-height: 600px;
+}
+
+.verdad .mision {
+	text-align:center;
+	padding: 100px;
+}
+/*FIN MISION*/
+
+/*INICIO FORMULARIO*/
+.form-contact {
+    background: #FFF;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+  }
+  
+  .form-header {
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .form-header span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  
+  .contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+  }
+  
+  .contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+  }
+  
+  .contact label {
+    font-weight: 700;
+  }
+  
+  .contact input:not([type='submit']), .contact textarea {
+    border: none;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+  }
+  
+  input[type='submit'] {
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: white;
+    font-size: 20px;
+    /* pointer-events: none; */
+    cursor: pointer;
+  
+  }
+
+  .xd{
+    margin-bottom: 800px;
+  }
+/*FIN FORMULARIO*/
+
+/*INICIO API*/
+
+
+#map {
+	height: 549px;
+	max-width: 100%;
+}
+
+/*FIN API*/
+
+/* FOOTER INICIO*/
+footer{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    width: 100%;
+    background-color: black;
+}
+
+.box {
+	width: 150px;
+}
+
+.rs {
+	display: flex;
+  	flex-direction: column;
+	text-decoration: none;
+}
+
+.red-social{
+	text-decoration: none;
+	color: #fff;
+	padding-bottom: 15px;
+}
+
+footer .redes-sociales{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; 
+}
+
+footer img{
+	transition: transform 0.3s ease-in-out;
+}
+
+footer img:hover{
+	transform: scale(1.5);
+}
+
+footer img {
+	width: 30px;
+	margin-right: 10px;
+}
+/*FOOTER FIN*/

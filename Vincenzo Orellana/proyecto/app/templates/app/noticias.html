@@ -1,0 +1,43 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <section class="noticias">
+        <article class="noticia">
+            <h3>Ley 40 horas</h3>
+            <img src="{% static 'app/images/40horas.jpg' %}">
+            <p>Tras varios años de discusión en la Cámara de Diputadas y Diputados y en el Senado, finalmente se aprobó con 127 votos a favor la ley que reduce la jornada laboral de 45 a 40 horas a la semana.</p>
+            <p>La ley de las 40 horas laborales será de manera paulatina en los lugares de trabajo en un plazo máximo de 5 años. Es decir, en el año 2026 contaremos con 42 horas semanales y en 2028 se deberían concretar las 40 horas semanales, sin embargo, los empleadores podrán anticiparse de forma voluntaria a esta medida sin esperar los cinco años que hay de plaz</p>
+            <p></p>
+        </article>
+        <article class="noticia">
+            <h3>Mejora la inflación y sube el peso</h3>
+            <img src="{% static 'app/images/peso.jpg' %}">
+            <p>Hoy el mercado amaneció con una buena noticia, especialmente para los consumidores en Estados Unidos: supimos que, en marzo, la inflación en ese país cayó bastante, a 5%, desde un 6% el mes pasado. Esto fue en gran parte gracias a que los precios de los energéticos han seguido cayendo.</p>
+            <img src="{% static 'app/images/deflacion.jpg' %}">
+        </article>
+        <article class="noticia"> 
+            <h3>La disputa entre China y Estados Unidos por el litio en América Latina</h3>
+            <img src="{% static 'app/images/litio.jpg' %}">
+            <p>Más de la mitad del litio del mundo está en Argentina, Bolivia y Chile, un triángulo que ha despertado el interés de gobiernos e inversores por entrar a esos mercados.</p>
+            <p>Países como China y Estados Unidos no quieren perderse la oportunidad de contar con un metal clave para fabricar las baterías que utilizan los autos eléctricos, un mercado en expansión al que están entrando cada vez más jugadores.</p>
+        </article>
+        <article class="noticia">
+            <h3>China simula ataques contra "objetivos clave" en Taiwán</h3>
+            <img src="{% static 'app/images/avion.jpg' %}">
+            <p>China ha simulado ataques de precisión contra objetivos clave en Taiwán y sus aguas circundantes durante un segundo día de ejercicios militares.</p>
+            <p>Las maniobras, que Pekín ha calificado de "severa advertencia" a la isla autónoma, son una respuesta a la visita de la presidenta de Taiwán, Tsai Ing-wen, a Estados Unidos el pasado 5 de abril.</p>
+            <img src="{% static 'app/images/barcos.jpg' %}">
+        </article>
+        <article class="noticia">
+            <h3>Confirman un tercer detenido por el homicidio del carabinero</h3>
+            <img src="{% static 'app/images/culpable.jpg' %}">
+            <p>En horas de la tarde de este miércoles, la Fiscalía Centro Norte, confirmó la detención de un tercer sujeto involucrado en el homicidio del suboficial de carabineros Daniel Palma.</p>
+            <p>A través de redes sociales, informaron que la Fiscalía en conjunto con Carabineros, "logran detención de 3er miembro de banda autora de homicidio de suboficial mayor Daniel Palma".</p>
+            <img src="{% static 'app/images/carabineros.jpg' %}">
+        </article>
+    </section>
+
+{% endblock %}

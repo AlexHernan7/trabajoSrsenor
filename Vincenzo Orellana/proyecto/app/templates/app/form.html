@@ -1,0 +1,36 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+    <div class="xd"></div>
+    <section class="form-contact">
+        
+
+    <form action="" class="contact" method="POST" onsubmit="return validarFormulario()">
+        <label for="nombres">Nombres</label>
+        <input type="text" name="nombres" id="nombres">
+  
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo">
+  
+        <label for="nombres">Celular</label>
+        <input type="text" name="celular" id="celular">
+  
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        <input type="submit" value="Enviar">
+
+      </form>
+  </section>
+
+{% endblock %}
+
+
+{% block js %}
+
+    <script src="{% static 'app/js/app.js' %}"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+{% endblock %}
