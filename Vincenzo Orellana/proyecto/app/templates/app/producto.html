@@ -1,0 +1,30 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+{% load humanize %}
+    <h2>Productos</h2>
+    <div class="Productos">
+
+        {% for p in productos %}
+
+        <div class="productos">
+
+            <div class="contenedor_producto">
+
+                <img src="" alt="">
+                <div class="detalle">
+                    <h5>{{ p.nombre | capfirst }}</h5>
+                    <h3>${{ p.precio | intcomma }}</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}
