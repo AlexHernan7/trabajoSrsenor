@@ -46,6 +46,12 @@
                 <li class="nav-item">
 					<a class="nav-link " aria-current="page" href="{% url 'api' %}">Mapa</a>
 				</li>
+                <li class="nav-item">
+					<a class="nav-link " aria-current="page" href="{% url 'agregar_producto' %}">Agregar Producto</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link " aria-current="page" href="{% url 'listar_productos' %}">Listado Productos</a>
+				</li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{% url 'logout' %}">Cerrar sesión</a>
