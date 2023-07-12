@@ -12,13 +12,24 @@
             <div class="row" style="padding: 10px 0;">
                 <div class="col-12">
                     <div class="row">
-                        Productos
+                        {% for producto in productos %}
+                        <div class="col-6">
+                            <div class="card" style="height: 10rem; width: 23rem; margin: 5px 0px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{producto.nombre}}</h5>
+                                    <p class="card-title">{{producto.descripcion}}</p>
+                                    <p class="card-title">{{producto.precio}}</p>
+                                    <a href="{% url 'Add' producto.id %}" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-4">
-            carrito
+            {% include "app/carrito.html" %}
         </div>
     </div>
 </div>
